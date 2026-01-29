@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "cheminf": "http://semanticscience.org/resource/",
+    "obo": "http://purl.obolibrary.org/obo/"
+  },
+  "columns": [
+    {
+      "name": "smiles",
+      "@type": "cheminf:CHEMINF_000018",
+      "description": "Canonical SMILES string",
+      "dataType": "string"
+    },
+    {
+      "name": "logp",
+      "@type": "http://purl.obolibrary.org/obo/MI_2028", 
+      "description": "Partition coefficient (logP)",
+      "dataType": "float"
+    },
+    {
+      "name": "qed",
+      "@type": "http://edamontology.org/data_2048",
+      "description": "Quantitative Estimation of Drug-likeness",
+      "dataType": "float"
+    },
+    {
+      "name": "sas",
+      "@type": "http://edamontology.org/data_2048",
+      "description": "Synthetic Accessibility Score",
+      "dataType": "float"
+    }
+  ]
+}

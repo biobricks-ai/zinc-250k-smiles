@@ -1,0 +1,10 @@
+{
+  "@context": {"@vocab": "https://schema.org/", "dcterms": "http://purl.org/dc/terms/"},
+  "@type": "DataDownload",
+  "name": "ZINC-250k Chemical Database",
+  "url": "https://github.com/aspuru-guzik-group/chemical_vae/blob/master/models/zinc_properties/250k_rndm_zinc_drugs_clean_3.csv",
+  "dateAccessed": "2026-01-29",
+  "dcterms:source": "ZINC Database",
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "citation": "Irwin, Sterling, Mysinger, Bolstad and Coleman, J. Chem. Inf. Model. 2012"
+}

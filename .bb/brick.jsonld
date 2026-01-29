@@ -1,0 +1,25 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "cheminf": "http://semanticscience.org/resource/",
+    "obo": "http://purl.obolibrary.org/obo/"
+  },
+  "@type": "dcat:Dataset",
+  "name": "zinc-250k-smiles",
+  "description": "A subset of the ZINC database containing 250,000 commercially-available compounds for virtual screening and generative modeling. Includes SMILES and descriptors.",
+  "keywords": ["toxicology", "chemistry", "drug discovery", "molecular generation"],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "dateCreated": "2026-01-29",
+  "version": "1.0.0",
+  "creator": {"@type": "Organization", "name": "BioBricks.ai"},
+  "distribution": [{
+    "@type": "dcat:Distribution",
+    "name": "data.parquet",
+    "contentUrl": "brick/data.parquet",
+    "encodingFormat": "application/x-parquet"
+  }],
+  "measurementTechnique": "Computational filtering",
+  "variableMeasured": ["SMILES", "logP", "QED", "SAS"]
+}
