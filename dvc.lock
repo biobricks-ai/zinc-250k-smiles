@@ -28,5 +28,5 @@ stages:
     outs:
     - path: brick/data.parquet
       hash: md5
-      md5: 61f0094b1e8a18e06f0539f3cd4d2079
+      md5: 87d17f04f2b5ae483925ea8930354025
       size: 11746078

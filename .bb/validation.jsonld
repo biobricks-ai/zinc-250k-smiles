@@ -1,0 +1,84 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": "prov:Entity",
+  "schema:name": "zinc-250k-smiles validation report",
+  "prov:generatedAtTime": "2026-07-03T18:43:50Z",
+  "bb:validator": "tools/bb_validate.py",
+  "bb:verdict": "PASS",
+  "bb:summary": {
+    "n_parquet_files": 1,
+    "total_rows": 249455,
+    "total_bytes": 11746078,
+    "note": ""
+  },
+  "bb:deterministic_checks": [
+    {
+      "file": "data.parquet",
+      "path": "/mnt/raid2/biobricks/zinc-250k-smiles/brick/data.parquet",
+      "rows": 249455,
+      "cols": 4,
+      "bytes": 11746078,
+      "columns": [
+        {
+          "name": "smiles",
+          "type": "large_string"
+        },
+        {
+          "name": "logp",
+          "type": "double"
+        },
+        {
+          "name": "qed",
+          "type": "double"
+        },
+        {
+          "name": "sas",
+          "type": "double"
+        }
+      ],
+      "null_fraction": {
+        "smiles": 0.0,
+        "logp": 0.0,
+        "qed": 0.0,
+        "sas": 0.0
+      },
+      "all_null_columns": [],
+      "sample_rows": 50000,
+      "sample_dup_fraction": 0.0,
+      "sample_constant_columns": [],
+      "smiles_column": "smiles",
+      "smiles_valid_fraction_sampled": 1.0,
+      "smiles_sampled": 2000,
+      "warnings": [],
+      "status": "PASS"
+    }
+  ],
+  "bb:datapackage_conformance": null,
+  "bb:web_validation": {
+    "bb:web_confidence": "high",
+    "bb:web_verdict": "CONFIRMED",
+    "bb:expected_rows": 249455,
+    "bb:observed_rows": 249455,
+    "bb:expected_columns": [
+      "smiles",
+      "logp",
+      "qed",
+      "sas"
+    ],
+    "bb:observed_columns": [
+      "smiles",
+      "logp",
+      "qed",
+      "sas"
+    ],
+    "bb:summary": "Web sources confirm ZINC-250k is the standard 250k-molecule subset of ZINC with exactly 249,455 drug-like molecules and SMILES plus logP (octanol-water partition), QED (drug-likeness), and SAS (synthetic accessibility) property columns. Widely used in generative-model benchmarks (Gomez-Bombarelli chemical VAE; Kusner grammar-VAE). Observed brick scale and columns match the literature exactly.",
+    "bb:sources": [
+      "https://deepwiki.com/aspuru-guzik-group/chemical_vae/6.1-zinc-dataset",
+      "https://github.com/aspuru-guzik-group/chemical_vae"
+    ],
+    "bb:checked_at": "2026-07-03T18:44:00Z"
+  }
+}
